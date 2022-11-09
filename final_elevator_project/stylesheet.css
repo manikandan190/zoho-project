@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  padding: 5vh 0;
+
+
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  
+}
+
+/* ----------------------- BUILDING ----------------------- */
+
+.building {
+  width: 600px;
+  position: relative;
+  z-index: 10;
+
+}
+
+.floor {
+  width: 100%;
+
+
+  height: 100px;
+  position: relative;
+}
+
+
+.entry {
+  position: absolute;
+
+  width: 65px;
+  height: 60px;
+  bottom: 0;
+}
+
+.entry--left {
+  right: 500px;
+}
+
+.entry--right {
+  right: 400px;
+}
+
+.entry--three {
+  right: 300px;
+}
+
+.entry--four {
+  right: 200px;
+}
+
+
+.lift {
+  position: absolute;
+
+  width: 59px;
+  height: 57px;
+
+  transition: 2s transform ease-in-out;
+  z-index: 1;
+}
+
+
+.lift--left {
+  bottom: 11px;
+  left: 34px;
+
+}
+
+.lift--right {
+  bottom: 11px;
+  left: 135px;
+}
+
+.lift--three {
+  bottom: 11px;
+  left: 235px;
+}
+
+.lift--four {
+  bottom: 11px;
+  left: 333px;
+}
+
+
+.floor-num-cont {
+  position: absolute;
+  background: grey;
+  height: 36px;
+  width: 70%;
+  z-index: 1000;
+
+}
+
+.floor-num {
+  position: absolute;
+
+  left: 50%;
+
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50%;
+
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+}
+
+/* ----------------------- CONTROL PANEL ----------------------- */
+
+.functionality {
+  min-width: 600px;
+
+  z-index: 10;
+}
+
+.floor__buttons {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin-left: -510px;
+  margin-right: 50px;
+
+}
+
+
+
+.call-button {
+  width: 15px;
+  height: 20px;
+
+}
+.call-button-cont--odd{
+  margin-right: 20px;
+}
+.call-button-cont--even{
+margin-left: 150px;
+}
+
+
+.lift-buttons {
+  display: grid;
+  grid-template-columns: 23px 23px;
+  margin-left: 200px;
+  grid-gap: 5px;
+}
+
+.lift-buttons button {
+  border-radius: 3px;
+
+}
+.buildingHeading{
+  display: flex;
+  margin-left:0px;
+
+}
+.buildingHeading h3{
+  margin-right: 50px;
+}
+
+
+/*----control-panel----*/
+.controlPanelHeading{
+  display: flex;
+  margin-left: 120px;
+  position: fixed;
+  margin-top: 200px;
+ 
+}
+.controlPanelHeading h3{
+  margin-right: 15px;
+}
+
+
+
+
+
+/* ----------------------- HEADINGS ----------------------- */
+
+.building-text-cont,
+.control-panel-text-cont {
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-cont {
+  display: flex;
+}
+
+.side-cont p {
+  padding: 10px 0;
+}
+
+#side-left--building {
+  padding-left: 105px;
+  ;
+}
+
+
+#side-right--building {
+  padding-left: 83px;
+  ;
+}
+
+#side-three--building {
+  padding-left: 105px;
+  ;
+}
+
+#side-left--control-panel {
+  padding-left: 100px;
+}
+
+#side-right--control-panel {
+  padding-left: 10px;
+}
+
+.lift-buttons--left {
+  padding-bottom: 0px;
+  position: fixed;
+  margin-left: 120px;
+  top: 400px;
+}
+
+
+.lift-buttons--right {
+  padding-bottom: 0px;
+  position: fixed;
+  margin-left: 200px;
+  top: 400px;
+
+}
+
+
+.lift-buttons--three {
+  padding-bottom: 0px;
+  margin-left: 270px;
+  position: fixed;
+  top: 400px;
+}
+
+.lift-buttons--four {
+  padding-bottom: 0px;
+  margin-left: 350px;
+  position: fixed;
+  top: 400px;
+}
